@@ -1,3 +1,5 @@
+ import { createRoot } from "react-dom/client";
+
 class JsCalculator extends React.Component {
     constructor(props) {
       super(props);
@@ -111,4 +113,5 @@ class JsCalculator extends React.Component {
   }
   }
   
-  ReactDOM.render(<JsCalculator />, document.getElementById("app"))
+const root = createRoot(document.getElementById("app"));
+root.render(<JsCalculator />);
