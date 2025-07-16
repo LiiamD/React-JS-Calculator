@@ -4,15 +4,15 @@
   "description": "React JavaScript Calculator",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir js --extensions \".js,.jsx\""
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@babel/cli": "^7.28.0",
-    "@babel/core": "^7.28.0",
-    "@babel/preset-env": "^7.28.0",
-    "@babel/preset-react": "^7.27.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
   }
 }

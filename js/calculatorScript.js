@@ -3,6 +3,7 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _react = _interopRequireWildcard(require("react"));
 var _client = require("react-dom/client");
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, "default": e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -52,94 +53,114 @@ function JsCalculator() {
       setDisplay("Erreur");
     }
   };
-  return /*#__PURE__*/_react["default"].createElement("div", {
-    id: "container"
-  }, /*#__PURE__*/_react["default"].createElement("div", {
-    id: "display"
-  }, display), /*#__PURE__*/_react["default"].createElement("div", {
-    id: "calculator"
-  }, /*#__PURE__*/_react["default"].createElement("button", {
-    id: "equals",
-    onClick: equalBtn
-  }, "="), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "add",
-    onClick: function onClick() {
-      return displayNum("+");
-    }
-  }, "+"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "subtract",
-    onClick: function onClick() {
-      return displayNum("-");
-    }
-  }, "-"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "multiply",
-    onClick: function onClick() {
-      return displayNum("x");
-    }
-  }, "x"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "divide",
-    onClick: function onClick() {
-      return displayNum("/");
-    }
-  }, "/"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "decimal",
-    onClick: function onClick() {
-      return displayNum(".");
-    }
-  }, "."), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "clear",
-    onClick: clearBtn
-  }, "Clear"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "zero",
-    onClick: function onClick() {
-      return displayNum("0");
-    }
-  }, "0"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "one",
-    onClick: function onClick() {
-      return displayNum("1");
-    }
-  }, "1"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "two",
-    onClick: function onClick() {
-      return displayNum("2");
-    }
-  }, "2"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "three",
-    onClick: function onClick() {
-      return displayNum("3");
-    }
-  }, "3"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "four",
-    onClick: function onClick() {
-      return displayNum("4");
-    }
-  }, "4"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "five",
-    onClick: function onClick() {
-      return displayNum("5");
-    }
-  }, "5"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "six",
-    onClick: function onClick() {
-      return displayNum("6");
-    }
-  }, "6"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "seven",
-    onClick: function onClick() {
-      return displayNum("7");
-    }
-  }, "7"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "eight",
-    onClick: function onClick() {
-      return displayNum("8");
-    }
-  }, "8"), /*#__PURE__*/_react["default"].createElement("button", {
-    id: "nine",
-    onClick: function onClick() {
-      return displayNum("9");
-    }
-  }, "9")));
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    id: "container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      id: "display",
+      children: display
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      id: "calculator",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "equals",
+        onClick: equalBtn,
+        children: "="
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "add",
+        onClick: function onClick() {
+          return displayNum("+");
+        },
+        children: "+"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "subtract",
+        onClick: function onClick() {
+          return displayNum("-");
+        },
+        children: "-"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "multiply",
+        onClick: function onClick() {
+          return displayNum("x");
+        },
+        children: "x"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "divide",
+        onClick: function onClick() {
+          return displayNum("/");
+        },
+        children: "/"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "decimal",
+        onClick: function onClick() {
+          return displayNum(".");
+        },
+        children: "."
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "clear",
+        onClick: clearBtn,
+        children: "Clear"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "zero",
+        onClick: function onClick() {
+          return displayNum("0");
+        },
+        children: "0"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "one",
+        onClick: function onClick() {
+          return displayNum("1");
+        },
+        children: "1"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "two",
+        onClick: function onClick() {
+          return displayNum("2");
+        },
+        children: "2"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "three",
+        onClick: function onClick() {
+          return displayNum("3");
+        },
+        children: "3"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "four",
+        onClick: function onClick() {
+          return displayNum("4");
+        },
+        children: "4"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "five",
+        onClick: function onClick() {
+          return displayNum("5");
+        },
+        children: "5"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "six",
+        onClick: function onClick() {
+          return displayNum("6");
+        },
+        children: "6"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "seven",
+        onClick: function onClick() {
+          return displayNum("7");
+        },
+        children: "7"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "eight",
+        onClick: function onClick() {
+          return displayNum("8");
+        },
+        children: "8"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        id: "nine",
+        onClick: function onClick() {
+          return displayNum("9");
+        },
+        children: "9"
+      })]
+    })]
+  });
 }
 var root = (0, _client.createRoot)(document.getElementById("app"));
-root.render(/*#__PURE__*/_react["default"].createElement(JsCalculator, null));
+root.render(/*#__PURE__*/(0, _jsxRuntime.jsx)(JsCalculator, {}));
