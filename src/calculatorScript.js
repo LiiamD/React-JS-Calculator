@@ -1,5 +1,5 @@
- import React, {useState} from "react"
- import { createRoot } from "react-dom/client";
+import React, { useState } from "react";
+import { createRoot } from "react-dom/client";
 
 function JsCalculator() {
     const [display, setDisplay] = useState("0");
