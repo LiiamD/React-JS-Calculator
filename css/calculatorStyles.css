@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box
+}
+
+body {
+  background: #FAC135;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Ajout de cette ligne pour avoir une hauteur de 100% de la fenêtre */
+  margin: 0;  /* Enlève la marge par défaut du body */
+}
+
+
+#container {
+  max-width: 300px;
+  margin: 50px auto;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  padding: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Écran d'affichage */
+#display {
+  background-color: #111;
+  color: #0f0;
+  font-size: 2em;
+  padding: 15px;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  min-height: 40px;
+}
+
+/* Grille des boutons */
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Style général des boutons */
+#calculator button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#calculator button:hover {
+  background-color: #666;
+}
+
+/* Bouton égal (=) */
+#equals {
+  background-color: #00b894;
+  grid-column: span 2;
+}
+
+#equals:hover {
+  background-color: #019172;
+}
+
+/* Bouton clear */
+#clear {
+  background-color: #DB6258;
+}
+
+#clear:hover {
+  background-color: #b71c1c;
+}
+
+/* Boutons opérateurs */
+#add, #subtract, #multiply, #divide {
+  background-color: #0984e3;
+}
+
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+  background-color: #0468bd;
+}
+
+#decimal {
+  background-color: #DBBA2C;
+}
+
+#decimal:hover {
+  background-color: #0468bd;
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine  {
+  background-color: #444;
+}
