@@ -56,7 +56,7 @@ function JsCalculator() {
     id: "container"
   }, /*#__PURE__*/_react["default"].createElement("div", {
     id: "display"
-  }, this.state.display), /*#__PURE__*/_react["default"].createElement("div", {
+  }, display), /*#__PURE__*/_react["default"].createElement("div", {
     id: "calculator"
   }, /*#__PURE__*/_react["default"].createElement("button", {
     id: "equals",

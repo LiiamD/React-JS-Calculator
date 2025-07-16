@@ -60,7 +60,7 @@ if (lastPart.includes(".")) {
     return (
       <div id="container">
         
-        <div id="display">{this.state.display}</div>
+        <div id="display">{display}</div>
         <div id="calculator">
           <button id="equals" onClick={equalBtn}>=</button>
           <button id="add" onClick={() => displayNum("+")}>+</button>
