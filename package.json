@@ -1,0 +1,25 @@
+{
+  "name": "react-js-calculator",
+  "version": "1.0.0",
+  "description": "React JavaScript Calculator",
+  "main": "index.js",
+"scripts": {
+  "build": "babel src --out-dir js --extensions \".js,.jsx\"",
+  "serve": "http-server . -p 8080",
+  "start": "npm run build && npm run serve"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "http-server": "^14.1.1"
+  }
+}
