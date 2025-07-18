@@ -1,7 +1,6 @@
 # React JS Calculator
 
 Un petit projet de calculatrice réalisé en **ReactJS**.  
-Compatible avec [FreeCodeCamp](https://www.freecodecamp.org/) pour les défis front-end.
 
 ## 🧠 Fonctionnalités
 
