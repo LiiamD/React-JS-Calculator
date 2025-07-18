@@ -34,4 +34,4 @@ Ouvrir directement le fichier HTML dans le navigateur ne marche pas à cause des
    ```bash
    npm run dev
     ```
-4.Ouvre http://localhost:XXXX dans ton navigateur
+4. Ouvre http://localhost:XXXX dans ton navigateur
